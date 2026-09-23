@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme{--color-ivory:#f2ece1;--color-sand:#e3d8c6;--color-earth:#7d6247;--color-ink:#24221f;--color-band:#24221f;--color-bandfg:#f2ece1;--font-serif:"Cormorant Garamond",Georgia,serif;--font-sans:"Jost",system-ui,sans-serif}
+html{background:var(--color-ivory)}body{margin:0;font-family:var(--font-sans);color:var(--color-ink);background:var(--color-ivory);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.marquee{animation:marquee 45s linear infinite}.marquee:hover{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.marquee{animation:none}}
+:focus-visible{outline:2px solid var(--color-earth);outline-offset:3px}
+.inp{width:100%;border:1px solid color-mix(in srgb,var(--color-ink) 22%,var(--color-sand));background:color-mix(in srgb,var(--color-sand) 30%,var(--color-ivory));color:var(--color-ink);padding:.7rem .8rem;font:inherit}
+.btn{display:inline-block;background:var(--color-ink);color:var(--color-ivory);padding:.85rem 1.7rem;transition:background .3s,color .3s;cursor:pointer;border:0;font:inherit;letter-spacing:.02em}.btn:hover{background:var(--color-earth)}
+.btn-l{background:#f6f1e7;color:#1b1916}.btn-l:hover{background:#e3d8c6}
+.btn-o{background:transparent;color:var(--color-ink);border:1px solid var(--color-ink)}.btn-o:hover{background:var(--color-ink);color:var(--color-ivory)}
