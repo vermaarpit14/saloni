@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme{--color-ivory:#f2ece1;--color-sand:#e3d8c6;--color-earth:#7d6247;--color-ink:#24221f;--font-serif:"Cormorant Garamond",Georgia,serif;--font-sans:"Jost",system-ui,sans-serif}
+html{background:#f2ece1}body{margin:0;font-family:var(--font-sans);color:#24221f;overflow-x:hidden}
+html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.marquee{animation:marquee 45s linear infinite}.marquee:hover{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.marquee{animation:none}}
+:focus-visible{outline:2px solid #7d6247;outline-offset:3px}
+.inp{width:100%;border:1px solid #cfc3ae;background:#faf6ee;padding:.7rem .8rem;font:inherit}
+.btn{display:inline-block;background:#24221f;color:#f2ece1;padding:.8rem 1.6rem;transition:background .3s;cursor:pointer;border:0;font:inherit}.btn:hover{background:#7d6247}
+.btn-l{background:#f2ece1;color:#24221f}.btn-l:hover{background:#e3d8c6}
