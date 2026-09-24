@@ -1,1 +1,8 @@
-{"rewrites":[{"source":"/(.*)","destination":"/index.html"}]}
+{"rewrites":[
+{"source":"/sitemap.xml","destination":"/api/sitemap"},
+{"source":"/robots.txt","destination":"/api/sitemap?robots=1"},
+{"source":"/product/:slug","destination":"/api/seo?type=product&slug=:slug"},
+{"source":"/p/:slug","destination":"/api/seo?type=page&slug=:slug"},
+{"source":"/category/:slug","destination":"/api/seo?type=category&slug=:slug"},
+{"source":"/(.*)","destination":"/index.html"}],
+"crons":[{"path":"/api/keepalive","schedule":"0 3 * * *"}]}
